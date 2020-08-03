@@ -1,0 +1,3 @@
+C:\Users\Emilj\source\repos\Fsharp book exercises\obj\Debug\netcoreapp3.1\Fsharp book exercises.fsprojAssemblyReference.cache
+C:\Users\Emilj\source\repos\Fsharp book exercises\obj\Debug\netcoreapp3.1\Fsharp book exercises.AssemblyInfoInputs.cache
+C:\Users\Emilj\source\repos\Fsharp book exercises\obj\Debug\netcoreapp3.1\Fsharp book exercises.AssemblyInfo.fs
