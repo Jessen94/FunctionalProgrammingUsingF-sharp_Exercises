@@ -12,8 +12,12 @@ let rec pow (s:string,n) = match n with
 // 2.3
 let isIthChar(str:string,i,ch) = if ch = str.[i] then true else false
 //2.4
-//let rec occFromIth (str,i,ch) = match
-  
+let occFromIth =
+    function
+     | (str, i, _) when i > String.length str -> 0
+     | (str, i, ch) -> str.[i..] |> Seq.filter(fun e -> e=ch) |> Seq.length 
+    
+
 //2.5
 let occInString (str,ch) = String.collect(fun c -> if c = ch then string c else "") str |> String.length
 
@@ -39,9 +43,9 @@ let rec nextPrime n = match prime(n+1) with
 
 //2.8
 let rec bin (n,k) = match (n,k) with
-                    | (row,0) -> 1
-                    | (row,col) when row = n -> 1
-                    | (row,col) -> bin(n-1,k-1) + bin(n-1,k);;
+                    | (_,0) -> 1
+                    | (row,_) when row = n -> 1
+                    | (_,_) -> bin(n-1,k-1) + bin(n-1,k);;
 //2.9
     //1: (int*int) -> int
     //2: f(0,_)
@@ -61,3 +65,12 @@ let unVAT n x = (float) n/(VAT n x)
 //2.12
 
 //2.13
+let curry =
+    fun a ->
+        fun b ->
+            fun c ->
+             a(b,c)
+
+let uncurry =
+    fun a ->
+        fun (b,c) -> a b c
