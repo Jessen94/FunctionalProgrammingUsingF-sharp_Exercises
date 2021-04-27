@@ -165,3 +165,21 @@ let revrev a =
     aux [] a
 
 // 4.16
+// int*int list -> int list
+let rec f =
+    function
+        | (x,[])    -> []
+        | (x,y::ys) -> (x+y)::f(x-1,ys)
+
+// ('a * 'a) list -> ('a * 'a) list
+let rec g =
+    function
+        | []    -> []
+        | (x,y)::s -> (x,y)::(y,x)::g s
+
+// 'a list -> 'a list
+let rec h =
+    function
+        | []    -> []
+        | x::xs -> x::(h xs)@[x]
+// 4.17
