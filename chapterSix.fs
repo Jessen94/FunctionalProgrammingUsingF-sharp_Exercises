@@ -57,3 +57,52 @@ let rec postfix =
         | Exp fe      -> postfix fe+ " exp "
 
 // 6.3
+
+
+// 6.4
+type BinTree<'a,'b> =
+    | Leaf of 'a
+    | Node of BinTree<'a,'b> * 'b * BinTree<'a,'b>
+let t1 = Node(Node(Leaf 1 , "cd", Leaf 2),"ab", Leaf 3)
+let t2 = Node(Leaf 1 , "cd", Leaf 2)
+let t3 = Leaf 3
+
+let leafVals t =
+    let rec aux acc =
+        function
+            | Leaf a  -> Set.add(a) acc
+            | Node(a,b,c) -> aux (aux acc c) a
+                             
+    aux Set.empty t
+let nodeVals t =
+    let rec aux acc =
+        function
+            | Leaf _  -> acc
+            | Node(a,b,c) -> aux (aux (Set.add b acc) c) a
+    aux Set.empty t
+let vals t =
+    (leafVals t, nodeVals t)
+    
+// 6.5
+type AncTree =
+    | Unspec
+    | Info of AncTree * string * AncTree
+let ancT1 = Info(Info(Info(Unspec,"Jørgen",Unspec),"Kurt",Info(Unspec,"Mona",Unspec)),"Emil",Info(Info(Unspec,"Poul Erik",Unspec),"Gitte",Info(Unspec,"Jonna",Unspec)))
+
+let maleAnc t =
+    let infoValue a = if a = Unspec then ""
+                      else a |> fun (Info(_,x,_):AncTree) -> x 
+    let rec aux tree acc =
+        match tree with
+           | Unspec -> List.filter(fun e -> String.length e > 0) acc
+           | Info(father,_,mother) -> (aux father) ((infoValue father)::acc) |> aux mother 
+    aux t []
+let femaleAnc t =
+    let infoValue a = if a = Unspec then ""
+                      else a |> fun (Info(_,x,_):AncTree) -> x 
+    let rec aux tree acc =
+        match tree with
+           | Unspec -> List.filter(fun e -> String.length e > 0) acc
+           | Info(father,_,mother) -> (aux mother) ((infoValue mother)::acc) |> aux father 
+    aux t []
+// 6.6
