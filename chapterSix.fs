@@ -105,4 +105,3 @@ let femaleAnc t =
            | Unspec -> List.filter(fun e -> String.length e > 0) acc
            | Info(father,_,mother) -> (aux mother) ((infoValue mother)::acc) |> aux father 
     aux t []
-// 6.6
