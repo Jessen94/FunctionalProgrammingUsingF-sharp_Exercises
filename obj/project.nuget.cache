@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "miXtNPUC02nf64Z4BdpphkQcnRIxC6mk6rl3SLlNTijSzIODa3VYYyau+hskggzvZRWlGBk5m+MRJMK2XWT2xQ==",
+  "dgSpecHash": "AQkvy4zZ+zT4ZlqSjsmLPl+PLBIXDWA/RXbo0H9I58WevFBl7JNDUIRXZmKodHJWthJ1WOY/OEzs8+zFZO/g1w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Emilj\\source\\repos\\Fsharp book exercises\\Fsharp book exercises.fsproj",
+  "projectFilePath": "D:\\skole\\6.semester\\f-sharp\\FunctionalProgrammingUsingF-sharp_Exercises\\Fsharp book exercises.fsproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emilj\\.nuget\\packages\\fsharp.core\\4.7.0\\fsharp.core.4.7.0.nupkg.sha512"
   ],

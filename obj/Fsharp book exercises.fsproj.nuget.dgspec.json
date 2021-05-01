@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emilj\\source\\repos\\Fsharp book exercises\\Fsharp book exercises.fsproj": {}
+    "D:\\skole\\6.semester\\f-sharp\\FunctionalProgrammingUsingF-sharp_Exercises\\Fsharp book exercises.fsproj": {}
   },
   "projects": {
-    "C:\\Users\\Emilj\\source\\repos\\Fsharp book exercises\\Fsharp book exercises.fsproj": {
+    "D:\\skole\\6.semester\\f-sharp\\FunctionalProgrammingUsingF-sharp_Exercises\\Fsharp book exercises.fsproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emilj\\source\\repos\\Fsharp book exercises\\Fsharp book exercises.fsproj",
+        "projectUniqueName": "D:\\skole\\6.semester\\f-sharp\\FunctionalProgrammingUsingF-sharp_Exercises\\Fsharp book exercises.fsproj",
         "projectName": "Fsharp book exercises",
-        "projectPath": "C:\\Users\\Emilj\\source\\repos\\Fsharp book exercises\\Fsharp book exercises.fsproj",
+        "projectPath": "D:\\skole\\6.semester\\f-sharp\\FunctionalProgrammingUsingF-sharp_Exercises\\Fsharp book exercises.fsproj",
         "packagesPath": "C:\\Users\\Emilj\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emilj\\source\\repos\\Fsharp book exercises\\obj\\",
+        "outputPath": "D:\\skole\\6.semester\\f-sharp\\FunctionalProgrammingUsingF-sharp_Exercises\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet",
