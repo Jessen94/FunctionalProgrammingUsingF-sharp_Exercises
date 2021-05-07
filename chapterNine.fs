@@ -84,3 +84,4 @@ let rightTree i =
             | 0 -> acc
             | a -> aux (Node(Leaf,(),acc)) (a-1)
     aux Leaf i
+

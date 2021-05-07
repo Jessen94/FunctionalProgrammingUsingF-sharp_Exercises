@@ -44,5 +44,7 @@ let whileFib n =
         n2 <- n3
         i <- i+1
     n2
-        
+// 8.7
+let HashSetFold: obj = failwith "not implemented"
+    
   
