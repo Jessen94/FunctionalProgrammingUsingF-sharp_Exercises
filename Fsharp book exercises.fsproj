@@ -16,6 +16,9 @@
     <Compile Include="chapterEight.fs" />
     <Compile Include="chapterNine.fs" />
     <Compile Include="chapterSix_partTwo.fs" />
+    <Compile Include="chapterNine_partTwo.fs" />
+    <Compile Include="chapterEleven.fs" />
+    <Compile Include="chapterTwelve.fs" />
   </ItemGroup>
 
 </Project>
